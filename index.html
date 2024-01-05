@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Newsletter SignUp</title>
 </head>
+
 <body>
-    
+    <main class="container">
+        <!-- Newsletter SignUp Content -->
+        <div class="grid-content-news ">
+            <div class="grid-1-col">
+                <h1 class="head-style">
+                    Stay updated!
+                </h1>
+                <p class="para-style">
+                    Join 60,000+ product managers receiving monthly updates on:
+                </p>
+                <ul class="list-styles">
+                    <li class="lists"><img src="images/icon-list.svg" alt="icon-list">Product discovery and building what matters</li>
+                    <li class="lists"><img src="images/icon-list.svg" alt="icon-list">Measuring to ensure updates are a success</li>
+                    <li class="lists"><img src="images/icon-list.svg" alt="icon-list">And much more!</li>
+                </ul>
+                
+                <p class="email-text">Email address</p>
+                <input type="email" placeholder="email@company.com" class="input-field" id="main-id">
+                <button class="btn-primary">Subscribe to monthly newsletter</button>
+            </div>
+            <div class="grid-2-col">
+                <img src="images/illustration-sign-up-desktop.svg" alt="main image" class="main-image">
+            </div>
+        </div>
+        <!-- Success Message content -->
+        <div class="success-content hidden">
+            <img src="images/icon-success.svg" alt="icon-success" class="success-icon">
+            <h2 class="success-head">Thanks for subscribing!</h2>
+            <p class="success-para">A confirmation email has been sent to <span id="id-success"></span>.Please open it and click the button inside to confirm your subscription</p>
+            <button class="btn-secondary">Dismiss Message</button>
+        </div>
+    </main>
 </body>
+
 </html>

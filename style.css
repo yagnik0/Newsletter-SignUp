@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(234, 29%, 20%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.grid-content-news{
+    max-width: 75rem;
+    display: grid;
+    gap: 3rem;
+    padding: 2rem 0 2rem 2rem;
+    border-radius: 3rem;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* Grid 1st column Styling */ 
+
+.grid-1-col {
+    margin-top: 4.5rem;
+    margin-left: 4rem;
+}
+
+.head-style {
+    font-size: 5rem;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 2rem;
+}
+
+.para-style {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: hsl(235, 18%, 26%);
+}
+
+.list-styles {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 3rem;
+}
+
+.lists {
+    display: flex;
+    font-size: 1.2rem;
+    gap: 1.2rem;
+}
+
+.email-text {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+}
+
+.input-field {
+    width: 100%;
+    padding: 1.2rem 2.4rem;
+    border: 1px solid grey;
+    border-radius: 0.8rem;
+    outline: none;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.input-field:focus {
+    border: 2px solid #000;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 1.2rem 2.2rem;
+    font-weight: 700;
+    border-radius: 0.8rem;
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition:  all 0.7s;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, hsl(4, 100%, 74%), hsl(4, 100%, 67%));
+    box-shadow: hsl(4, 100%, 74%) 0px 5px 10px -7px, hsl(4, 100%, 67%) 0px 5px 10px -4px;
+}
+
+/* Grid 2nd column Styling */
+.main-image {
+    width: 350px;
+    height: 450px;
+}
+
+/* Success Message Styling*/
+
+.success-content {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 35rem;
+    border-radius: 2rem;
+    padding: 2rem 4rem;
+}
+.success-icon {
+    width: 50px;
+    margin-bottom: 2.5rem;
+}
+
+.success-head {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    line-height: 1;
+}
+
+.success-para {
+    font-size: 1.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.btn-secondary{
+    width: 100%;
+    margin-bottom: 2.5rem;
+    font-size: 1.2rem;
+    padding: 1rem 2.2rem;
+    border: none;
+    border-radius: 0.8rem;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.btn-secondary:hover{
+    background: linear-gradient(to right, hsl(4, 100%, 74%), hsl(4, 100%, 67%));
+    box-shadow: hsl(4, 100%, 74%) 0px 5px 10px -7px, hsl(4, 100%, 67%) 0px 5px 10px -4px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Media Queries for screen size 430px */
+
+@media (max-width:27em) {
+
+    .container {
+        min-height: 0;
+    }
+
+    .grid-content-news{
+        height: 100%;
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .grid-2-col {
+        background: none;
+        grid-row: 1;
+    }
+
+    .main-image {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .grid-1-col {
+        margin-top: 0;
+        margin-left: 0;
+        padding: 4rem;
+    }
+  
+    .head-style{
+        font-size: 4rem;
+    }
+    
+    .success-content{
+        margin-top: 23rem;
+    }
+}
