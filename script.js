@@ -7,6 +7,7 @@ const dismissBtn = document.querySelector('.btn-secondary');
 const error = document.querySelector('.error-message')
 const emailId = document.getElementById('main-id');
 const idShown = document.getElementById('id-success');
+const inputField = document.querySelector('.input-field')
 
 
 submitBtn.addEventListener('click', () => {
@@ -29,6 +30,12 @@ dismissBtn.addEventListener('click', () => {
     emailId.value = "";
     emailId.style.border = "";
     error.classList.add('hidden');
+})
+
+
+inputField.addEventListener('focus', () => {
+    error.classList.add('hidden')
+     emailId.style.border = "2px solid grey"
 })
 
 

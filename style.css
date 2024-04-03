@@ -122,6 +122,7 @@ body {
     max-width: 35rem;
     border-radius: 2rem;
     padding: 2rem 4rem;
+    margin-top: 0;
 }
 .success-icon {
     width: 50px;
@@ -169,37 +170,46 @@ body {
 
 /* Media Queries for screen size 430px */
 
-@media (max-width:27em) {
-
-    .container {
-        min-height: 0;
+@media (max-width:49em) {
+    
+    body {
+        pad: 2rem;
     }
 
     .grid-content-news{
-        height: 100%;
+        max-width: 42rem;
         grid-template-columns: 1fr;
-        padding: 0;
-        gap: 1rem;
+        padding: 2rem;
     }
-
-    .grid-2-col {
-        background: url(images/illustration-sign-up-mobile.svg);
-        grid-row: 1;
-        background-size: cover;
-        background-position: center;
-    }
-
+    
     .grid-1-col {
         margin-top: 0;
         margin-left: 0;
-        padding: 4rem;
+    }
+
+    .grid-2-col{
+        grid-row: 1;
+        object-fit: contain;
+    }
+
+    .main-image {
+    width: 380px;
+    /* height: 450px; */
     }
   
     .head-style{
         font-size: 4rem;
     }
+
+    .btn-secondary{
+        margin-top: 2rem;
+    }
     
     .success-content{
         margin-top: 18rem;
+    }
+
+    .input-field, .btn-primary {
+        width: 99%;
     }
 }
